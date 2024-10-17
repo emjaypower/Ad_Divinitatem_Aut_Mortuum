@@ -1,6 +1,7 @@
 package net.emjaypower.ad_divinitatem;
 
 import com.mojang.logging.LogUtils;
+import net.emjaypower.ad_divinitatem.block.ModBlocks;
 import net.emjaypower.ad_divinitatem.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class AdDivinitatem {
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -53,6 +55,9 @@ public class AdDivinitatem {
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.Purplestone_Dust);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.Purplestone_Block);
         }
     }
 

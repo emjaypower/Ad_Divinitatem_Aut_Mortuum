@@ -1,3 +1,6 @@
 {
-  "item.ad_divinitatem.purplestone_dust": "Purplestone Dust"
+  "item.ad_divinitatem.purplestone_dust": "Purplestone Dust",
+  "item.ad_divinitatem.purplestone_block": "Block of Purplestone",
+
+  "block.ad_divinitatem.purplestone_block": "Block of Purplestone"
 }
