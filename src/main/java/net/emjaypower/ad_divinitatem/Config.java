@@ -1,4 +1,4 @@
-package mod.emjaypower.ad_divinitatem;
+package net.emjaypower.ad_divinitatem;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
