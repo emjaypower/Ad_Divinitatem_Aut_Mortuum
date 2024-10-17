@@ -2,8 +2,8 @@ package net.emjaypower.ad_divinitatem;
 
 import com.mojang.logging.LogUtils;
 import net.emjaypower.ad_divinitatem.block.ModBlocks;
+import net.emjaypower.ad_divinitatem.item.ModCreativeModeTabs;
 import net.emjaypower.ad_divinitatem.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,6 +32,8 @@ public class AdDivinitatem {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -53,10 +55,8 @@ public class AdDivinitatem {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() == ModCreativeModeTabs.Ad_Divinitatem_Tab.getKey()) {
             event.accept(ModItems.Purplestone_Dust);
-        }
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.Purplestone_Block);
         }
     }
