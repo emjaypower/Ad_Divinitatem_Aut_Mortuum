@@ -18,6 +18,19 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModBlocks.Purplestone_Block.get()))
                     .title(Component.translatable("creativetab.ad_divinitatem.ad_divinitatem_tab"))
+                    .displayItems(((parameters, output) -> {
+                        output.accept(ModItems.Purplestone_Dust.get());
+
+                        output.accept(ModItems.Divine_Core_Creation.get());
+                        output.accept(ModItems.Divine_Core_Destruction.get());
+                        output.accept(ModItems.Divine_Core_Light.get());
+                        output.accept(ModItems.Divine_Core_Darkness.get());
+
+                        output.accept(ModBlocks.Purplestone_Block.get());
+                        output.accept(ModBlocks.Profaned_Soil.get());
+                        output.accept(ModBlocks.Hallowed_Soil.get());
+
+                    }))
                     .build());
 
     public static void register(IEventBus eventBus) {
