@@ -7,4 +7,5 @@ public class HallowedSoil extends FarmBlock {
         super(pProperties);
     }
 
+
 }

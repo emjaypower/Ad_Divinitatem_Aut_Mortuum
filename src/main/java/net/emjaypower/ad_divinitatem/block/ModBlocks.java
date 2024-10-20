@@ -3,6 +3,7 @@ package net.emjaypower.ad_divinitatem.block;
 import net.emjaypower.ad_divinitatem.AdDivinitatem;
 import net.emjaypower.ad_divinitatem.block.custom.HallowedSoil;
 import net.emjaypower.ad_divinitatem.block.custom.ProfanedSoil;
+import net.emjaypower.ad_divinitatem.block.custom.PurplestoneDust;
 import net.emjaypower.ad_divinitatem.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,13 +21,16 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, AdDivinitatem.MODID);
 
+    public static final RegistryObject<Block> Purplestone_Dust = registerBlock("purplestone_dust",
+            () -> new PurplestoneDust(BlockBehaviour.Properties.of()));
     public static final RegistryObject<Block> Purplestone_Block = registerBlock("purplestone_block",
             () -> new PoweredBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> Profaned_Soil = registerBlock("profaned_soil",
             () -> new ProfanedSoil(BlockBehaviour.Properties.of()));
     public static final RegistryObject<Block> Hallowed_Soil = registerBlock("hallowed_soil",
-            () -> new HallowedSoil(BlockBehaviour.Properties.of()));
+            () -> new HallowedSoil(BlockBehaviour.Properties.of()
+                    ));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

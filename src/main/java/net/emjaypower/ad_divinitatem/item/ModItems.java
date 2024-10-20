@@ -1,10 +1,7 @@
 package net.emjaypower.ad_divinitatem.item;
 
 import net.emjaypower.ad_divinitatem.AdDivinitatem;
-import net.emjaypower.ad_divinitatem.item.custom.DivineCoreCreationItem;
-import net.emjaypower.ad_divinitatem.item.custom.DivineCoreDarknessItem;
-import net.emjaypower.ad_divinitatem.item.custom.DivineCoreDestructionItem;
-import net.emjaypower.ad_divinitatem.item.custom.DivineCoreLightItem;
+import net.emjaypower.ad_divinitatem.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,9 +12,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, AdDivinitatem.MODID);
 
-    public static final RegistryObject<Item> Purplestone_Dust = ITEMS.register("purplestone_dust",
-            () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> Divine_Core_Creation = ITEMS.register("divine_core_creation",
             () -> new DivineCoreCreationItem(new Item.Properties()));
     public static  final RegistryObject<Item> Divine_Core_Destruction = ITEMS.register("divine_core_destruction",
@@ -26,6 +20,9 @@ public class ModItems {
             () -> new DivineCoreLightItem(new Item.Properties()));
     public static  final RegistryObject<Item> Divine_Core_Darkness = ITEMS.register("divine_core_darkness",
             () -> new DivineCoreDarknessItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> Divine_Fruit = ITEMS.register("divine_fruit",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.DivineFruit)));
 
 
     public static void register(IEventBus eventBus) {
