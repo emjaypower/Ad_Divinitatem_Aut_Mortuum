@@ -1,0 +1,56 @@
+[23Oct2024 14:43:03.499] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\emjay\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, ad_divinitatem, --all, --output, C:\Users\emjay\Ad_Divinitatem_Aut_Mortuum\src\generated\resources, --existing, C:\Users\emjay\Ad_Divinitatem_Aut_Mortuum\src\main\resources]
+[23Oct2024 14:43:03.502] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[23Oct2024 14:43:03.503] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.2 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[23Oct2024 14:43:03.593] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[23Oct2024 14:43:03.674] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/emjay/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[23Oct2024 14:43:04.469] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[23Oct2024 14:43:04.968] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\emjay\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, ad_divinitatem, --all, --output, C:\Users\emjay\Ad_Divinitatem_Aut_Mortuum\src\generated\resources, --existing, C:\Users\emjay\Ad_Divinitatem_Aut_Mortuum\src\main\resources]
+[23Oct2024 14:43:05.845] [main/ERROR] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Error occurred applying transform of coremod /coremods/field_to_method.js function flowerpotblock
+java.lang.IllegalStateException: No field with name potted found
+	at SECURE-BOOTSTRAP/coremods@5.1.6/net.minecraftforge.coremod.api.ASMAPI.redirectFieldToMethod(ASMAPI.java:267) ~[coremods-5.1.6.jar:?]
+	at org.openjdk.nashorn.scripts/org.openjdk.nashorn.internal.scripts.Script$Recompilation$11$1835A$\^eval\_.initializeCoreMod#transformer-4(<eval>:52) ~[?:?]
+	at SECURE-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:648) ~[nashorn-core-15.4.jar:?]
+	at SECURE-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:513) ~[nashorn-core-15.4.jar:?]
+	at SECURE-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:520) ~[nashorn-core-15.4.jar:?]
+	at SECURE-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:111) ~[nashorn-core-15.4.jar:?]
+	at SECURE-BOOTSTRAP/coremods@5.1.6/net.minecraftforge.coremod.NashornFactory.lambda$getFunction$0(NashornFactory.java:22) ~[coremods-5.1.6.jar:5.1.6]
+	at SECURE-BOOTSTRAP/coremods@5.1.6/net.minecraftforge.coremod.transformer.CoreModClassTransformer.runCoremod(CoreModClassTransformer.java:22) ~[coremods-5.1.6.jar:?]
+	at SECURE-BOOTSTRAP/coremods@5.1.6/net.minecraftforge.coremod.transformer.CoreModClassTransformer.runCoremod(CoreModClassTransformer.java:14) ~[coremods-5.1.6.jar:?]
+	at SECURE-BOOTSTRAP/coremods@5.1.6/net.minecraftforge.coremod.transformer.CoreModBaseTransformer.transform(CoreModBaseTransformer.java:42) ~[coremods-5.1.6.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.TransformerHolder.transform(TransformerHolder.java:28) ~[modlauncher-10.2.2.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.ClassTransformer.performVote(ClassTransformer.java:166) ~[modlauncher-10.2.2.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:104) ~[modlauncher-10.2.2.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:44) ~[modlauncher-10.2.2.jar:?]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.readerToClass(SecureModuleClassLoader.java:480) ~[securemodules-2.2.20.jar:2.2.20]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.findClass(SecureModuleClassLoader.java:406) ~[securemodules-2.2.20.jar:2.2.20]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.loadClass(SecureModuleClassLoader.java:422) ~[securemodules-2.2.20.jar:2.2.20]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.block.FireBlock.bootStrap(FireBlock.java:339) ~[forge-1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:45) ~[forge-1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2-recomp.jar:?]
+	at TRANSFORMER/forge@52.0.21/net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:45) ~[forge-1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2-recomp.jar:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.data.Main.main(Main.java:101) ~[forge-1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2-recomp.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.1-52.0.21/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:85) ~[fmlloader-1.21.1-52.0.21.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.1-52.0.21/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:69) ~[fmlloader-1.21.1-52.0.21.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.2.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.2.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.2.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.2.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.2/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.2.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.3/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.3.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.3.jar:2.1.3]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.3.jar:2.1.3]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.3.jar:2.1.3]
+[23Oct2024 14:43:08.491] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 52.0.21, for MC 1.21.1 with MCP 20240808.132146
+[23Oct2024 14:43:08.491] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v52.0.21 Initialized
+[23Oct2024 14:43:08.505] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[23Oct2024 14:43:08.944] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [ad_divinitatem]
+[23Oct2024 14:43:09.044] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/emjay/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2/forge-1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[23Oct2024 14:43:09.045] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/emjay/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2/forge-1.21.1-52.0.21_mapped_parchment_2023.10.08-1.20.2-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[23Oct2024 14:43:09.146] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[23Oct2024 14:43:09.260] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 114 ms
+[23Oct2024 14:43:09.260] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 115 ms
+[23Oct2024 14:43:09.262] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 4, old count: 4, new count: 5, removed stale: 0, written: 0

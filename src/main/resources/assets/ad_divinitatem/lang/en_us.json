@@ -1,0 +1,16 @@
+{
+  "item.ad_divinitatem.purplestone_block": "Block of Purplestone",
+  "item.ad_divinitatem.divine_core_creation": "Divine Core of Creation",
+  "item.ad_divinitatem.divine_core_destruction": "Divine Core of Destruction",
+  "item.ad_divinitatem.divine_core_light": "Divine Core of Light",
+  "item.ad_divinitatem.divine_core_darkness": "Divine Core of Darkness",
+
+  "item.ad_divinitatem.divine_fruit": "Divine Fruit",
+
+  "block.ad_divinitatem.purplestone_dust": "Purplestone Dust",
+  "block.ad_divinitatem.purplestone_block": "Block of Purplestone",
+  "block.ad_divinitatem.profaned_soil": "Profaned Soil",
+  "block.ad_divinitatem.hallowed_soil": "Hallowed Soil",
+
+  "creativetab.ad_divinitatem.ad_divinitatem_tab": "Ad Divinitatem"
+}
