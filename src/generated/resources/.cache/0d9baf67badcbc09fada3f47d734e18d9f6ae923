@@ -1,0 +1,10 @@
+// 1.21.1	2024-10-23T15:59:21.8066691	Block States: ad_divinitatem
+b7da71bcd1e4806917dafe1c289250e7c2c08aa7 assets/ad_divinitatem/blockstates/hallowed_soil.json
+b49516a352ef18a38f215f9ca7b27063f5aafe43 assets/ad_divinitatem/blockstates/profaned_soil.json
+20de5f89012f6bbc1eeb5fc199297f686428cc6f assets/ad_divinitatem/blockstates/purplestone_block.json
+4f111ece64f2a27473db7075e8185a2735375b2d assets/ad_divinitatem/models/block/hallowed_soil.json
+7dbd6b101be30b33d61283a0c0168a18de20e3e7 assets/ad_divinitatem/models/block/profaned_soil.json
+1fedd17a47027bd5e1017a23438c7272155f1fae assets/ad_divinitatem/models/block/purplestone_block.json
+30fa1339a39f813e7473609ee168206c28a69ee1 assets/ad_divinitatem/models/item/hallowed_soil.json
+77a458e04b50e348dbea8dcde930a5ea17043ccf assets/ad_divinitatem/models/item/profaned_soil.json
+3a9d7cb810846bfeb693a81f3c8363e49bf34ed5 assets/ad_divinitatem/models/item/purplestone_block.json

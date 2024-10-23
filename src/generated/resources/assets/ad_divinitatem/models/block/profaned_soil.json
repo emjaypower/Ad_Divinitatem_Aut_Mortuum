@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "ad_divinitatem:block/hallowed_soil_texture"
+    "all": "ad_divinitatem:block/profaned_soil"
   }
 }

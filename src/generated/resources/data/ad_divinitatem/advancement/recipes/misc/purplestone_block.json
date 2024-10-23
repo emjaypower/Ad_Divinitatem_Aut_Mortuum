@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_purplestone_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ad_divinitatem:purplestone_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_divinitatem:purplestone_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_purplestone_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_divinitatem:purplestone_block"
+    ]
+  }
+}
