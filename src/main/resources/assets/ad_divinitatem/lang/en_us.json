@@ -1,16 +1,25 @@
 {
   "item.ad_divinitatem.purplestone_block": "Block of Purplestone",
   "item.ad_divinitatem.divine_core_creation": "Divine Core of Creation",
+  "tooltip.ad_divinitatem.divine_core_creation.tooltip": "Duplicates certain blocks when there is nothing above them",
   "item.ad_divinitatem.divine_core_destruction": "Divine Core of Destruction",
+  "tooltip.ad_divinitatem.divine_core_destruction.tooltip": "Destroys any block (be careful)",
   "item.ad_divinitatem.divine_core_light": "Divine Core of Light",
+  "tooltip.ad_divinitatem.divine_core_light.tooltip": "Converts dirt into hallowed soil",
   "item.ad_divinitatem.divine_core_darkness": "Divine Core of Darkness",
+  "tooltip.ad_divinitatem.divine_core_darkness.tooltip": "Converts dirt into profaned soil",
 
   "item.ad_divinitatem.divine_fruit": "Divine Fruit",
+  "tooltip.ad_divinitatem.divine_fruit.tooltip": "The forbidden taste of knowledge",
 
   "block.ad_divinitatem.purplestone_dust": "Purplestone Dust",
+  "tooltip.ad_divinitatem.purplestone_dust.tooltip": "Functions like redstone witout connecting to it(WIP)",
   "block.ad_divinitatem.purplestone_block": "Block of Purplestone",
+  "tooltip.ad_divinitatem.purplestone_block.tooltip": "Functions like redstone witout connecting to it(WIP)",
   "block.ad_divinitatem.profaned_soil": "Profaned Soil",
+  "tooltip.ad_divinitatem.profaned_soil.tooltip": "Aggressively spawns mobs(WIP)",
   "block.ad_divinitatem.hallowed_soil": "Hallowed Soil",
+  "tooltip.ad_divinitatem.hallowed_soil.tooltip": "Speeds up crop growth(WIP)",
 
   "creativetab.ad_divinitatem.ad_divinitatem_tab": "Ad Divinitatem"
 }

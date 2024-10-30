@@ -2,11 +2,16 @@ package com.emjaypower.ad_divinitatem.item;
 
 import com.emjaypower.ad_divinitatem.AdDivinitatem;
 import com.emjaypower.ad_divinitatem.item.custom.*;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -22,7 +27,13 @@ public class ModItems {
             () -> new DivineCoreDarknessItem(new Item.Properties()));
 
     public static final RegistryObject<Item> Divine_Fruit = ITEMS.register("divine_fruit",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.DivineFruit)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.DivineFruit)) {
+                @Override
+                public void appendHoverText(ItemStack pStack, TooltipContext tooltipContext, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+                    pTooltipComponents.add(Component.translatable("tooltip.ad_divinitatem.divine_fruit.tooltip"));
+                    super.appendHoverText(pStack, tooltipContext, pTooltipComponents, pIsAdvanced);
+                }
+            });
 
 
     public static void register(IEventBus eventBus) {
