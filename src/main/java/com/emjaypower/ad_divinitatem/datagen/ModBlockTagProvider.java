@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -47,5 +48,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.COAL_ORE)
                 .add(Blocks.DEEPSLATE_COAL_ORE)
                 .add(Blocks.NETHER_QUARTZ_ORE);
+
+        tag(ModTags.Blocks.NeedsAdDivinitatemToolTier1)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTags.Blocks.IncorrectForAdDivinitatemToolTier1)
+                .addTag(BlockTags.f_316248_)
+                .remove(ModTags.Blocks.NeedsAdDivinitatemToolTier1);
+
     }
 }

@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.Profaned_Soil.get());
                         output.accept(ModBlocks.Hallowed_Soil.get());
 
+                        output.accept(ModItems.ADAM_Pickaxe_Tier_1.get());
+
                     }))
                     .build());
 

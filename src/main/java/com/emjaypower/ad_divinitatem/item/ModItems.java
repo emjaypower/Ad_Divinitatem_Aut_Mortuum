@@ -5,6 +5,7 @@ import com.emjaypower.ad_divinitatem.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -34,6 +35,10 @@ public class ModItems {
                     super.appendHoverText(pStack, tooltipContext, pTooltipComponents, pIsAdvanced);
                 }
             });
+
+    public static final RegistryObject<Item> ADAM_Pickaxe_Tier_1 = ITEMS.register("adam_pickaxe_tier_1",
+            () -> new PickaxeItem(ModToolTiers.ADAM_TIER_1, new Item.Properties()
+                    .m_324699_(PickaxeItem.m_320415_(ModToolTiers.ADAM_TIER_1, 1, 2.8f))));
 
 
     public static void register(IEventBus eventBus) {

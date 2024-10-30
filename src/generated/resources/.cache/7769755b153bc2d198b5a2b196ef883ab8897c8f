@@ -1,4 +1,6 @@
-// 1.21.1	2024-10-29T11:53:47.0068752	Tags for minecraft:block mod id ad_divinitatem
+// 1.21.1	2024-10-30T15:41:10.948232	Tags for minecraft:block mod id ad_divinitatem
 904ebf2bbe229c92863c7a1572eb4210baf91559 data/ad_divinitatem/tags/block/creation_core_blocks.json
+00959720c086dc5febd448f4bef28700bd95f8cb data/ad_divinitatem/tags/block/incorrect_for_ad_divinitatem_tool_tier_1.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/ad_divinitatem/tags/block/needs_ad_divinitatem_tool_tier_1.json
 4a209b000bb873dfe015a3a545fe86b1b0caa240 data/minecraft/tags/block/mineable/pickaxe.json
 c125db32b1113891745fa9714addf3f0e9398bf9 data/minecraft/tags/block/mineable/shovel.json

@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#ad_divinitatem:needs_ad_divinitatem_tool_tier_1"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}
