@@ -1,5 +1,6 @@
 package com.emjaypower.ad_divinitatem;
 
+import com.emjaypower.ad_divinitatem.component.ModDataComponentTypes;
 import com.mojang.logging.LogUtils;
 import com.emjaypower.ad_divinitatem.block.ModBlocks;
 import com.emjaypower.ad_divinitatem.item.ModCreativeModeTabs;
@@ -36,6 +37,8 @@ public class AdDivinitatem {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register((modEventBus));
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

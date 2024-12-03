@@ -37,8 +37,8 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> ADAM_Pickaxe_Tier_1 = ITEMS.register("adam_pickaxe_tier_1",
-            () -> new PickaxeItem(ModToolTiers.ADAM_TIER_1, new Item.Properties()
-                    .m_324699_(PickaxeItem.m_320415_(ModToolTiers.ADAM_TIER_1, 1, 2.8f))));
+            () -> new DivinePickItem(ModToolTiers.ADAM_TIER_1, new Item.Properties()
+                    .m_324699_(PickaxeItem.m_320415_(ModToolTiers.ADAM_TIER_1, 1, 2.8f)), 8000, 1000));
 
 
     public static void register(IEventBus eventBus) {
